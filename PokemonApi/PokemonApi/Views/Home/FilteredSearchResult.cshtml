@@ -1,0 +1,108 @@
+﻿@model PokemonApi.Models.FilteredPokemon
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered Pokémon Search Result</title>
+
+
+    <style>
+        h1 {
+            margin-bottom: 10px;
+            color: #fff81a;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-family: 'PokemonFont', sans-serif;
+            font-weight: bold;
+            font-size: x-large;
+        }
+        h2{
+            margin-bottom: 10px;
+            color: #fff81a;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-family: 'PokemonFont', sans-serif;
+            font-weight: bold;
+            font-size: x-large;
+
+        }
+
+
+        h3{
+            margin-bottom: 10px;
+            color: #fff81a;
+            justify-content: center;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            font-family: 'PokemonFont', sans-serif;
+            font-weight: bold;
+            font-size: x-large;
+        }
+    </style>
+
+
+
+
+
+
+</head>
+
+
+
+
+<body>
+    <h1>Filtered Pokémon Search Result</h1>
+    
+    <h2>HP, Attack and Defense are filtered in the search...</h2>
+    <h3>Please click the Pokéball to go back</h3>
+
+    
+   
+    <table class="pokemon-table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Type 1</th>
+                <th>Type 2</th>
+                <th>Total</th>
+                <th>SP Attack</th>
+                <th>SP Defense</th>
+                <th>Speed</th>
+                <th>Generation</th>
+                <th>Legendary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Id</td>
+                <td>@Model.Name</td>
+                <td>@Model.Type1</td>
+                <td>@Model.Type2</td>
+                <td>@Model.Total</td>
+                <td>@Model.SpAtk</td>
+                <td>@Model.SpDef</td>
+                <td>@Model.Speed</td>
+                <td>@Model.Generation</td>
+                <td>@Model.Legendary</td>
+                   
+
+
+
+            </tr>
+        </tbody>
+    </table>
+  
+
+
+
+
+
+
+</body>
+</html>
